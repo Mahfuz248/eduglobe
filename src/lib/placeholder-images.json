@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero1",
+      "description": "Students in a modern classroom",
+      "imageUrl": "https://images.unsplash.com/photo-1757192420329-39acf20a12b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGFzc3Jvb20lMjBzdHVkZW50c3xlbnwwfHx8fDE3NjgxMzI5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classroom students"
+    },
+    {
+      "id": "hero2",
+      "description": "School campus on a sunny day",
+      "imageUrl": "https://images.unsplash.com/photo-1763328446274-c5ae7c07d403?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY2hvb2wlMjBjYW1wdXN8ZW58MHx8fHwxNzY4MDU5MTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school campus"
+    },
+    {
+      "id": "hero3",
+      "description": "Students participating in a science fair",
+      "imageUrl": "https://images.unsplash.com/photo-1493528237448-144452699e16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwZmFpcnxlbnwwfHx8fDE3NjgxMzI5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science fair"
+    },
+    {
+      "id": "gallery1",
+      "description": "Students in a library",
+      "imageUrl": "https://images.unsplash.com/photo-1595315343110-9b445a960442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaWJyYXJ5JTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY4MDc2NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "library students"
+    },
+    {
+      "id": "gallery2",
+      "description": "School sports day",
+      "imageUrl": "https://images.unsplash.com/photo-1556732282-595ef530909c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzcG9ydHMlMjBkYXl8ZW58MHx8fHwxNzY4MTMyOTU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports day"
+    },
+    {
+      "id": "gallery3",
+      "description": "Art class in progress",
+      "imageUrl": "https://images.unsplash.com/photo-1609174112693-52fdcebffd89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnQlMjBjbGFzc3xlbnwwfHx8fDE3NjgxMDYzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art class"
+    },
+    {
+      "id": "gallery4",
+      "description": "School building exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1611941671018-6c3907cb7a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY4MTMyOTU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school building"
+    },
+    {
+      "id": "gallery5",
+      "description": "Graduation ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmFkdWF0aW9uJTIwY2VyZW1vbnl8ZW58MHx8fHwxNzY4MDYwMTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "graduation ceremony"
+    },
+    {
+      "id": "gallery6",
+      "description": "Students collaborating on a project",
+      "imageUrl": "https://images.unsplash.com/photo-1567762755523-74cefdb5e25f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50cyUyMGNvbGxhYm9yYXRpbmd8ZW58MHx8fHwxNzY4MDg3MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students collaborating"
+    },
+    {
+      "id": "gallery7",
+      "description": "Music class with various instruments",
+      "imageUrl": "https://images.unsplash.com/photo-1611597585711-62f80429a8fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBjbGFzc3xlbnwwfHx8fDE3NjgxMzI5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music class"
+    },
+    {
+      "id": "gallery8",
+      "description": "Students on a playground",
+      "imageUrl": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2hvb2wlMjBwbGF5Z3JvdW5kfGVufDB8fHx8MTc2ODEzMjk1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school playground"
+    },
+    {
+      "id": "map",
+      "description": "Map showing school location",
+      "imageUrl": "https://images.unsplash.com/photo-1603466183710-70b84997a93f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2ODA4MDMwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    },
+    {
+      "id": "about-hero",
+      "description": "Architectural shot of the school building",
+      "imageUrl": "https://images.unsplash.com/photo-1654546156234-e25e174ba602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2hvb2wlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY4MTMyOTU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school architecture"
+    }
+  ]
 }
