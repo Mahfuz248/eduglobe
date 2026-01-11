@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useActionState } from 'react';
+import { useActionState, useEffect, useState } from 'react';
 
 import {
   Carousel,
@@ -17,7 +17,7 @@ import { Label } from '@/components/ui/label';
 
 import { useLanguage } from '@/context/language-context';
 import { translations } from '@/lib/translations';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages, useGalleryImages } from '@/lib/placeholder-images';
 import { submitContactForm } from '@/lib/actions';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
@@ -25,10 +25,22 @@ export default function Home() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith('hero'));
-  const mapImage = PlaceHolderImages.find((img) => img.id === 'map');
+  const { allImages } = useGalleryImages();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  
+  const heroImages = allImages.filter((img) => img.id.startsWith('hero'));
+  const mapImage = allImages.find((img) => img.id === 'map');
 
   const [state, formAction] = useActionState(submitContactForm, { message: '' });
+
+  if (!isMounted) {
+      // Render a skeleton or null on the server and initial client render
+      return null;
+  }
 
   return (
     <div className="flex flex-col">
@@ -36,7 +48,7 @@ export default function Home() {
         <Carousel className="w-full h-full" opts={{ loop: true }} plugins={[]}>
           <CarouselContent className="h-full">
             {heroImages.map((image, index) => (
-              <CarouselItem key={index} className="h-full">
+              <CarouselItem key={image.id} className="h-full">
                 <div className="relative h-full w-full">
                   <Image
                     src={image.imageUrl}
@@ -118,7 +130,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="text-primary mt-1 h-6 w-6" />
-                  <span>{t.contact.email}</span>
+                  <span>{tcontact.email}</span>
                 </div>
               </div>
               <div className="mt-8 rounded-lg overflow-hidden shadow-lg">

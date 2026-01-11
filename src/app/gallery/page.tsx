@@ -2,13 +2,13 @@
 import Image from 'next/image';
 import { useLanguage } from '@/context/language-context';
 import { translations } from '@/lib/translations';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useGalleryImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function GalleryPage() {
   const { language } = useLanguage();
   const t = translations[language].gallery;
-  const galleryImages = PlaceHolderImages.filter((img) => img.id.startsWith('gallery'));
+  const { galleryImages } = useGalleryImages();
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
