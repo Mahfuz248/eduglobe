@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useFormState } from 'react-dom';
+import { useActionState } from 'react';
 
 import {
   Carousel,
@@ -28,7 +28,7 @@ export default function Home() {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith('hero'));
   const mapImage = PlaceHolderImages.find((img) => img.id === 'map');
 
-  const [state, formAction] = useFormState(submitContactForm, { message: '' });
+  const [state, formAction] = useActionState(submitContactForm, { message: '' });
 
   return (
     <div className="flex flex-col">
