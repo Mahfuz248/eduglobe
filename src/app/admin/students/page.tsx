@@ -22,6 +22,7 @@ import {
 } from '@/components/ui/dialog';
 import { Pencil, Trash2 } from 'lucide-react';
 import { students as defaultStudents, type Student } from '@/lib/student-data';
+import { Card } from '@/components/ui/card';
 
 export default function StudentsPage() {
   const [students, setStudents] = useState<Student[]>([]);
