@@ -190,3 +190,22 @@ export const translations = {
     },
   },
 };
+
+const getTranslations = () => {
+    if (typeof window !== 'undefined') {
+        const fromStorage = localStorage.getItem('translations');
+        if (fromStorage) {
+            return JSON.parse(fromStorage);
+        }
+    }
+    return translations;
+}
+
+const translationProxy = new Proxy(translations, {
+    get: (target, prop) => {
+        const liveTranslations = getTranslations();
+        return liveTranslations[prop as keyof typeof liveTranslations];
+    }
+});
+
+export { translationProxy as translations };

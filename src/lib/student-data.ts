@@ -116,6 +116,17 @@ export const students: Student[] = [
   },
 ];
 
+
+const getStudents = (): Student[] => {
+    if (typeof window !== 'undefined') {
+        const fromStorage = localStorage.getItem('students');
+        if (fromStorage) {
+            return JSON.parse(fromStorage);
+        }
+    }
+    return students;
+}
+
 export const getStudentById = (id: string): Student | undefined => {
-  return students.find((student) => student.id === id);
+  return getStudents().find((student) => student.id === id);
 };
