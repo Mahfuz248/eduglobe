@@ -37,7 +37,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
         <SidebarContent>
           <SidebarMenu>
             <SidebarMenuItem>
-              <Link href="/admin" legacyBehavior passHref>
+              <Link href="/admin">
                 <SidebarMenuButton
                   isActive={isActive('/admin')}
                   icon={<LayoutDashboard />}
@@ -47,7 +47,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link href="/admin/students" legacyBehavior passHref>
+              <Link href="/admin/students">
                 <SidebarMenuButton
                   isActive={isActive('/admin/students')}
                   icon={<Users />}
@@ -57,7 +57,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link href="/admin/results" legacyBehavior passHref>
+              <Link href="/admin/results">
                 <SidebarMenuButton
                   isActive={isActive('/admin/results')}
                   icon={<BookOpen />}
@@ -67,7 +67,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link href="/admin/gallery" legacyBehavior passHref>
+              <Link href="/admin/gallery">
                 <SidebarMenuButton
                   isActive={isActive('/admin/gallery')}
                   icon={<GalleryHorizontal />}
@@ -77,7 +77,7 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link href="/admin/settings" legacyBehavior passHref>
+              <Link href="/admin/settings">
                 <SidebarMenuButton
                   isActive={isActive('/admin/settings')}
                   icon={<Settings />}
