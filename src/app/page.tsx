@@ -32,8 +32,8 @@ export default function Home() {
     setIsMounted(true);
   }, []);
   
-  const heroImages = allImages.filter((img) => img.id.startsWith('hero'));
-  const mapImage = allImages.find((img) => img.id === 'map');
+  const heroImages = isMounted ? allImages.filter((img) => img.id.startsWith('hero')) : PlaceHolderImages.filter((img) => img.id.startsWith('hero'));
+  const mapImage = isMounted ? allImages.find((img) => img.id === 'map') : PlaceHolderImages.find((img) => img.id === 'map');
 
   const [state, formAction] = useActionState(submitContactForm, { message: '' });
 
@@ -130,7 +130,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="text-primary mt-1 h-6 w-6" />
-                  <span>{tcontact.email}</span>
+                  <span>{t.contact.email}</span>
                 </div>
               </div>
               <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
